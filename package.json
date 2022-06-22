@@ -1,0 +1,14 @@
+{
+  "name": "prova",
+  "version": "1.0.0",
+  "description": "prova",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "EDuardo Mateus Da Costa",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^19.0.6"
+  }
+}

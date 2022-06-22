@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Somador</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+    <body>
+        <h1>Somador</h1>
+        <div>
+            <h3>Informe o primero número:</h3>
+            <input type="number" id="n1" value="0"></input>
+        </div>
+        <div>
+            <h3>Informe o segundo número:</h3>
+            <input type="number" id="n2" value="0"></input>
+        </div>
+        <button onclick="somar()"> Somar</button>
+        <span>Resultado:</span>
+        <span id="resultado"></span>
+    </body>
+</html>
+
+<script>
+    function somar(){
+       var n1 =  document.getElementById("n1").value;
+       var n2 = document.getElementById("n2").value;
+       var result = document.getElementById("resultado");
+       result.innerText = (Number.parseInt(n1) + Number.parseInt(n2));
+    }
+</script>
